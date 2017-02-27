@@ -1,0 +1,54 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("vinu.edu") {
+	.aui {
+    	@font-face {
+			font-family:'fontawesome-alloy';
+			src:url("fonts/fontawesome-alloy.eot");
+			src:url("fonts/fontawesome-alloy.eot?#iefix") format("embedded-opentype"),url("fonts/fontawesome-alloy.woff") format("woff"),url("fonts/fontawesome-alloy.ttf") format("truetype"),url("fonts/fontawesome-alloy.svg#fontawesome-alloy") format("svg");
+			font-weight:normal;
+			font-style:normal;
+			}
+		background-color:white;
+		color:#333;
+		font-family:"Arial",Arial,sans-serif;
+		font-size:14px;
+		line-height:20px;
+		margin:0;
+	}
+
+	/* portal */
+	div.portal div.container,
+	div.containerPortal,
+	div.portal div.bottomRound b,
+	/* content pane */
+	div.landing div.container,
+	div.landing div.bottomRound b {
+		background-color:#131313;
+	}
+	#loginOptions ul li a, #loginOptions ul li.subOption a {
+		background-color:#131313;
+		color:#000;
+	}
+	/* Portlet Title */
+	#moduleTitle,
+	.portlet h2 {
+		background-color:#333333;
+		color:#FFFFFF; /* changed - #fff; */
+		text-shadow:none; /* added */
+	}
+	/* Portlet Title on hover */
+	.portlet h2:hover {
+		background-color:#333333;
+	}
+	/* Portlet */
+	#moduleBorder,
+	#moduleBody,
+	.portlet,
+	.portlet h2 span.reorder {
+		border-color:#333333;
+		background-color:#333333;
+		text-shadow:none; /* added */
+		/*color:#fdd83a; /* added */
+	}
+}
