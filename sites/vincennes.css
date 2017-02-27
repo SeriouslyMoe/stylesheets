@@ -1,23 +1,28 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("vinu.edu") {
-	.aui {
-    	@font-face {
-			font-family:'fontawesome-alloy';
-			src:url("fonts/fontawesome-alloy.eot");
-			src:url("fonts/fontawesome-alloy.eot?#iefix") format("embedded-opentype"),url("fonts/fontawesome-alloy.woff") format("woff"),url("fonts/fontawesome-alloy.ttf") format("truetype"),url("fonts/fontawesome-alloy.svg#fontawesome-alloy") format("svg");
-			font-weight:normal;
-			font-style:normal;
-			}
-		background-color:white;
-		color:#333;
-		font-family:"Arial",Arial,sans-serif;
-		font-size:14px;
-		line-height:20px;
-		margin:0;
+	.aui body {
+	    font-family: "Roboto",Arial,sans-serif;
+	    font-size: 14px;
+	    line-height: 20px;
+	    color: #333;
+	}
+	/* welcome overlay */
+	.welcomeOverlay {
+ 		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B0000000,endColorstr=#B0000000);
+		bottom: 0;
+		font-family: "Helvetica Neue";
+		height: 100%;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		z-index: 1001;
 	}
 	html{
-		font:300 .78em "Lucida Grande",Arial,sans-serif
+		font:300 .78em "Roboto",Roboto,Arial,sans-serif
 	}
 	html{
 		font:400 .8em "Helvetica Neue",Helvetica,Arial,sans-serif
@@ -50,7 +55,7 @@
 		font-weight:bold
 	}
 	#contentFrame,#schemePreview,.schemePreviewBody,body{
-		background:#efede3 url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/empty.png) repeat 0 -5px
+		background: url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/kumiko.png) repeat 0 -150px
 	}
 	body.topFrame{
 		background:#f7f7f7
@@ -134,6 +139,29 @@
 		background:-moz-linear-gradient(100% 200% 180deg,#eee,#dedede);
 		background:-webkit-gradient(linear,0 100%,100% 100%,from(#dedede),to(#eee))
 	}
+	#globalNavPageContentArea {
+		background: #171717 !important /*url(images/teched-bg.png) no-repeat -100px bottom fixed*/;
+	}
+	#contentArea,#schemePreviewBody,.contentBox{
+		border:0px solid #aaa;
+		background:#FFF;
+		background:rgba(255,255,255,1);
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+		border-radius:4px;
+		-moz-box-shadow:0 1px 4px rgba(0,0,0,0.15);
+		-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.15);
+		box-shadow:0 1px 4px rgba(0,0,0,0.15)
+	}
+	.item span{
+		color: #3C4AB2 !important;
+	}
+	#contentArea,.container,.containerOptions,.containerPortal{
+		background-color:#171717;
+		margin:0;
+		border-radius:0 0 4px 4px;
+		color:#D7D7D7 !important;
+	}
 	/* portal */
 	div.portal div.container,
 	div.containerPortal,
@@ -141,10 +169,10 @@
 	/* content pane */
 	div.landing div.container,
 	div.landing div.bottomRound b {
-		background-color:#131313;
+		background-color:#171717;
 	}
 	#loginOptions ul li a, #loginOptions ul li.subOption a {
-		background-color:#131313;
+		background-color:#171717;
 		color:#000;
 	}
 	/* Portlet Title */
@@ -167,5 +195,53 @@
 		background-color:#333333;
 		text-shadow:none; /* added */
 		/*color:#fdd83a; /* added */
+	}
+	.contentList>li,.buildList>li,.contentListPlain>li,.announcementList>li,.contentPageItem{
+		padding:20px 30px;
+		margin:0 -1px;
+		position:relative;
+		border:0px solid transparent;
+		border-top-color:#ccc;
+		-webkit-transition-property:
+		-webkit-box-shadow,border,background;
+		-webkit-transition-duration:200ms;
+		-webkit-transition-timing-function:cubic-bezier(0.420,0.000,1.000,1.000);
+		-moz-transition:border,margin,background 250ms ease-out
+	}
+	#pageHeader,#schemePreviewHead,.pageTitle h1,.pageTitleError h1{
+		padding:0;
+		margin:0;
+		line-height:1;
+		color:#F5F5F5 !important;
+		text-shadow:0 1px 0 rgba(255,255,255,0)
+	}
+	div.pageTitle h1 {
+		color:#F5F5F5 !important;
+	}
+	#pageHeader, #schemePreviewHead, .pageTitle {
+	    padding: 20px 30px;
+	    margin: 0;
+	    background: -moz-linear-gradient(100% 100% 90deg,#dedede,#eee);
+	    background: -webkit-gradient(linear,0 0,0 100%,from(#333333),to(#333333));
+	        background-color: rgba(0, 0, 0, 0);
+	    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#eeeeee, endColorstr=#dedede";
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#eeeeee,endColorstr=#dedede);
+	    -moz-border-radius: 3px 3px 0 0;
+	    -webkit-border-radius: 4px 4px 0 0;
+	    border-radius: 4px 4px 0 0;
+	    -moz-box-shadow: 1px 1px 0 #fafafa inset;
+	    -webkit-box-shadow: 1px 1px 0 #fafafa inset;
+	    position: relative;
+	}
+	/*Branding hooks*/
+	#contentArea,
+	#schemePreviewBody,
+	/*Regular selectors*/
+	.container, .contentPane div.bottomRound b {
+		background-image:;
+		background-position:;
+		background-repeat:;
+		color:;
+		background-color:#333333;
 	}
 }
