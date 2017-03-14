@@ -35,6 +35,25 @@
     	background-color: #101010 !important;
 	}
 
+	div.thumb {
+	    margin-bottom: .5em;
+	    width: auto;
+    	background-color: #040404;
+	}
+
+	div.thumbinner {
+    	border: 0px solid #ccc;
+    	padding: 3px;
+    	background-color: #040404;
+    	font-size: 94%;
+    	text-align: center;
+    	overflow: hidden;
+	}
+
+	div.thumbcaption {
+		color: #556b82 !important;
+	}
+
 	div.vectorTabs ul li {
     	line-height: 0em;
     	background-color: #383838 !important;
@@ -43,6 +62,10 @@
 	div.vectorTabs li.selected {
     	background-image: url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/wig_selected-tab.png) !important;
     	background-image:
+	}
+
+	div.vectorTabs li.selected a, div.vectorTabs li.selected a:visited {
+    	color: #888;
 	}
 
 	div#footer ul li {
@@ -69,7 +92,7 @@
 	}
 
 	div#simpleSearch input {
-		border: solid 1px #000000;
+		border: solid 1px #040404;
     	background-color: #101010;
     	color: #CCC;
 		background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-black-solid-color-background.jpg);
@@ -92,5 +115,9 @@
 
 	h1, h2, h3, h4, h5, h6 {
     	color: #888;
+	}
+
+	html .thumbimage {
+    	border: 0px solid #ccc;
 	}
 }
