@@ -17,13 +17,21 @@ body {
 }
 
 .content-with-bg {
-    background-image: url(https://i.imgur.com/tKty2aZ.png);
+    background-image: url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/osu/main-bg-new.png);
     padding: 1px 2px 1px 2px;
     min-height: 400px;
 }
 
+#coolheader[style] {
+    background-image:url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/osu/right-pippi.jpg) !important;
+}
+
 .final_footer {
-    background: url(https://i.imgur.com/9YQlJpA.png) repeat-x;
+    background: url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/osu/footer_transition.png) repeat-x;
+}
+
+.footer {
+    background-image: url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/osu/main-bottom-new.png);
 }
 
 h1, h2 {
@@ -36,8 +44,17 @@ h2 a {
     color: #aaa;
 }
 
+.mainbody2 {
+    background-image: url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/osu/head-left-new.png);
+}
+
+#playstats {
+    color: #aaa;
+    background: #1d1e2a;
+}
+
 .playstyle {
-    background-image: url(/images/playstyles.png);
+    background-image: url(https://raw.githubusercontent.com/sleepywitchgal/stylesheets/master/_resources/osu/playstyles.png);
 }
 
 .playstyle-container {
@@ -70,6 +87,15 @@ h2 a {
     color: #aaa;
 }
 
+.sf-menu a, .sf-menu a:visited {
+    color: #556B82;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background: #1d1e2a;
+	color: #aaa;
+}
+
 .sectionContents {
     background: #1d1e2a;
 }
@@ -80,3 +106,4 @@ h2 a {
     background: #1d1e2a;
     color: #aaa;
 }
+
