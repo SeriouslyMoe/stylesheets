@@ -1,0 +1,82 @@
+a {
+    color: #556B82;
+}
+
+.avatar-holder {
+    background: #14151f;
+    border: 1px solid #14151f;
+}
+
+body {
+	color: #aaa
+}
+
+.bodytopbg {
+    background: #14151f url(/images/bg-top.png) repeat-x;
+    min-height: 700px;
+}
+
+.content-with-bg {
+    background-image: url(https://i.imgur.com/tKty2aZ.png);
+    padding: 1px 2px 1px 2px;
+    min-height: 400px;
+}
+
+.final_footer {
+    background: url(https://i.imgur.com/9YQlJpA.png) repeat-x;
+}
+
+h1, h2 {
+    color: #aaa;
+    text-shadow: #1d1e2a 0px 0px 0px;
+    overflow: hidden;
+}
+
+h2 a {
+    color: #aaa;
+}
+
+.playstyle {
+    background-image: url(/images/playstyles.png);
+}
+
+.playstyle-container {
+    background: #14151f;
+    border-radius: 0px;
+}
+
+.prof-beatmap {
+    background: #14151f;
+    border: 1px solid #14151f;
+}
+
+.prof-beatmap .pp-display {
+    color: #aaa;
+    text-shadow: #14151f 0px 0px 0px;
+}
+
+.profileStatHeader {
+    background: #1d1e2a;
+    border-bottom: 1px solid #1d1e2a;
+    color: #5a539a;
+}
+
+.profileStatLine {
+    background: #1d1e2a;
+    border-bottom: 1px dashed #1d1e2a;
+}
+
+.profile-username {
+    color: #aaa;
+}
+
+.sectionContents {
+    background: #1d1e2a;
+}
+
+.sectionHeading {
+    border-bottom: 1px solid #1d1e2a;
+    border-top: 1px solid #1d1e2a;
+    background: #1d1e2a;
+    color: #aaa;
+}
